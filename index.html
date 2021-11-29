@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS STYLE -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- NORMALIZE -->
+		<link rel="stylesheet" href="css/normalize.css" />
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Basic Calculator</title>
+	</head>
+	<body>
+		<div class="calculator">
+			<div class="display">
+				<div class="display__top">
+					<div id="firts-previous-value">0</div>
+					<div id="operator"></div>
+					<div id="second-previous-value"></div>
+				</div>
+				<div class="display__bottom" id="current-value">0</div>
+			</div>
+			<div class="keyboard">
+				<button class="keyboard__btn del col-2" id="clear-all">
+					CA
+				</button>
+				<button class="keyboard__btn del" id="del">&larr;</button>
+				<button class="keyboard__btn operator" id="divide">/</button>
+				<button class="keyboard__btn number">7</button>
+				<button class="keyboard__btn number">8</button>
+				<button class="keyboard__btn number">9</button>
+				<button class="keyboard__btn operator" id="mult">×</button>
+				<button class="keyboard__btn number">4</button>
+				<button class="keyboard__btn number">5</button>
+				<button class="keyboard__btn number">6</button>
+				<button class="keyboard__btn operator" id="subtract">-</button>
+				<button class="keyboard__btn number">1</button>
+				<button class="keyboard__btn number">2</button>
+				<button class="keyboard__btn number">3</button>
+				<button class="keyboard__btn operator" id="sum">+</button>
+				<button class="keyboard__btn operator" id="changeSign">
+					±
+				</button>
+				<button class="keyboard__btn number">0</button>
+				<button class="keyboard__btn" id="addPoint">.</button>
+				<button class="keyboard__btn equal" id="equal">=</button>
+			</div>
+		</div>
+		<script src="js/index.js" type="module"></script>
+	</body>
+</html>
