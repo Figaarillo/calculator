@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS STYLE -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- NORMALIZE -->
+		<link rel="stylesheet" href="css/normalize.css" />
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Basic Calculator</title>
+	</head>
+	<body>
+		<div class="calculator">
+			<div class="display">
+				<input type="text" id="previous-value" class="display__top" value="0" />
+				<input
+					type="text"
+					id="current-value"
+					class="display__bottom"
+					value="0"
+				/>
+			</div>
+			<div class="keyboard">
+				<button class="keyboard__btn del col-2" onclick="clearAll()">CA</button>
+				<button class="keyboard__btn del" onclick="del()">&larr;</button>
+				<button class="keyboard__btn operator" onclick="divide()">/</button>
+				<button class="keyboard__btn number" onclick="addNumber('7')">7</button>
+				<button class="keyboard__btn number" onclick="addNumber('8')">8</button>
+				<button class="keyboard__btn number" onclick="addNumber('9')">9</button>
+				<button class="keyboard__btn operator" onclick="multiply()">×</button>
+				<button class="keyboard__btn number" onclick="addNumber('4')">4</button>
+				<button class="keyboard__btn number" onclick="addNumber('5')">5</button>
+				<button class="keyboard__btn number" onclick="addNumber('6')">6</button>
+				<button class="keyboard__btn operator" onclick="subtract()">-</button>
+				<button class="keyboard__btn number" onclick="addNumber('1')">1</button>
+				<button class="keyboard__btn number" onclick="addNumber('2')">2</button>
+				<button class="keyboard__btn number" onclick="addNumber('3')">3</button>
+				<button class="keyboard__btn operator" onclick="sum()">+</button>
+				<button class="keyboard__btn" onclick="changeSign()">±</button>
+				<button class="keyboard__btn number" id="0">0</button>
+				<button class="keyboard__btn" onclick="addPoint()">.</button>
+				<button class="keyboard__btn equal" onclick="viewResult()">=</button>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

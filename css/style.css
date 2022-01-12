@@ -1,0 +1,103 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* VARIABLES */
+:root {
+	--color-bg-display: #3fe4fc;
+	--color-bg-btn-active: #fb3be3;
+	--color-bg-btn-equal: #6d2896;
+	--color-bg-btn-delete: #ff7070;
+	--color-bg-f: #64e8ff;
+	--color-bg-s: #00ff6c;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(to left, var(--color-bg-f), var(--color-bg-s));
+	display: flex;
+	justify-content: center; /*alinea en sentido vertical*/
+	align-items: center; /*alinea en sentido horizontal*/
+	height: 100vh; /*se le indica que el body ocupa toda la pantalla y de esa forma se pueden centrar los elemento*/
+}
+.calculator {
+	display: grid;
+	grid-template-columns: 270px;
+	grid-template-rows: 130px 330px;
+	box-shadow: 0px 0px 70px -10px #000;
+	border-radius: 20px;
+}
+
+.display {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 25px 15px;
+	background-color: var(--color-bg-display);
+	border-radius: 20px 20px 0 0;
+}
+
+.display__top,
+.display__bottom {
+	text-align: right;
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	outline: none;
+}
+
+.display__top {
+	font-size: 25px;
+	font-weight: 700;
+	height: 30px;
+}
+
+.display__bottom {
+	font-size: 55px;
+	font-weight: 900;
+	height: 70px;
+}
+
+.keyboard {
+	background-color: #fff;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: repeat(4, 60px);
+	grid-template-rows: repeat(5, 60px);
+	border-radius: 0 0 20px 20px;
+}
+
+.keyboard__btn {
+	cursor: pointer;
+	margin: 5px;
+	border-radius: 30px;
+	border: none;
+	font-size: 1.3em;
+	font-weight: 900;
+	background-color: transparent;
+	box-shadow: 5px 5px 5px -4px #0003;
+}
+
+.keyboard__btn:active {
+	box-shadow: 10px 4px 10px -5px var(--color-bg-btn-active);
+}
+
+.col-2 {
+	grid-column: span 2;
+}
+
+.del {
+	background-color: var(--color-bg-btn-delete);
+	color: #fff;
+}
+
+.equal {
+	background-color: var(--color-bg-btn-equal);
+	color: #fff;
+	font-size: 2.5em;
+	font-weight: 900;
+}
+
+.div-0 {
+	font-size: 18px;
+}
