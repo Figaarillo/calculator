@@ -10,11 +10,19 @@
 	--color-bg-btn-delete: #ff7070;
 	--color-bg-f: #64e8ff;
 	--color-bg-s: #00ff6c;
+	/* DARK COLORS */
+	--color-bg-btn-active-dark: #a80393;
+	--color-bg-btn-equal-dark: #572078;
+	--color-bg-btn-delete-dark: #890000;
+	--color-bg-display-dark: #027484;
+	--color-bg-f-dark: #004e5c;
+	--color-bg-s-dark: #00824a;
+	--color-bg-dark: #131516;
 }
 
 body {
 	margin: 0;
-	background: linear-gradient(to left, var(--color-bg-f), var(--color-bg-s));
+	background: linear-gradient(to left, var(--color-bg-f-dark), var(--color-bg-s-dark));
 	display: flex;
 	justify-content: center; /*alinea en sentido vertical*/
 	align-items: center; /*alinea en sentido horizontal*/
@@ -33,7 +41,7 @@ body {
 	flex-direction: column;
 	padding: 20px 20px 10px;
 	border-radius: 20px 20px 0 0;
-	background-color: var(--color-bg-display);
+	background-color: var(--color-bg-display-dark);
 }
 
 .display__top,
@@ -64,7 +72,7 @@ body {
 }
 
 .keyboard {
-	background-color: #fff;
+	background-color: var(--color-bg-dark);
 	display: grid;
 	justify-content: center;
 	align-content: center;
@@ -74,6 +82,7 @@ body {
 }
 
 .keyboard__btn {
+	color: #fff;
 	cursor: pointer;
 	margin: 5px;
 	border-radius: 30px;
@@ -85,7 +94,7 @@ body {
 }
 
 .keyboard__btn:active {
-	box-shadow: 10px 4px 10px -5px var(--color-bg-btn-active);
+	box-shadow: 10px 4px 10px -5px var(--color-bg-btn-active-dark);
 }
 
 .col-2 {
@@ -93,12 +102,12 @@ body {
 }
 
 .del {
-	background-color: var(--color-bg-btn-delete);
+	background-color: var(--color-bg-btn-delete-dark);
 	color: #fff;
 }
 
 .equal {
-	background-color: var(--color-bg-btn-equal);
+	background-color: var(--color-bg-btn-equal-dark);
 	color: #fff;
 	font-size: 2.5em;
 	font-weight: 900;

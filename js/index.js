@@ -11,12 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	const keyboard = document.querySelector('.keyboard');
 
 	keyboard.addEventListener('click', e => {
-		if (e.target.classList[1] == 'number')
-			screen.addNumber(e.target.innerText);
-		else if (e.target.classList[1] == 'operator')
-			screen.calculateValue(e.target.id);
-		else if (e.target.id == 'clear-all') screen.clearAll();
-		else if (e.target.id == 'del') screen.del();
-		else if (e.target.id == 'addPoint') screen.addPoint();
+		if (e.target.classList[1] === 'number') screen.addNumber(e.target.innerText);
+		else if (e.target.classList[1] == 'operator') screen.calculateValue(e.target.id);
+		else if (e.target.id === 'clear-all') screen.clearAll();
+		else if (e.target.id === 'del') screen.del();
+		else if (e.target.id === 'addPoint') screen.addPoint();
+		else if (e.target.id === 'equal') screen.getEqual();
 	});
 });

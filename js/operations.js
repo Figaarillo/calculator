@@ -9,7 +9,7 @@ export default class Operations {
 		this.operator = operator;
 	}
 
-	getOperator(operator) {
+	getResult(operator) {
 		if (operator === 'sum') {
 			this.setOperator(1);
 			return '+';
@@ -22,6 +22,8 @@ export default class Operations {
 		} else if (operator === 'divide') {
 			this.setOperator(4);
 			return '÷';
+		} else {
+			return;
 		}
 	}
 
