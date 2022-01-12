@@ -12,10 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	keyboard.addEventListener('click', e => {
 		if (e.target.classList[1] === 'number') screen.addNumber(e.target.innerText);
-		else if (e.target.classList[1] == 'operator') screen.calculateValue(e.target.id);
-		else if (e.target.id === 'clear-all') screen.clearAll();
-		else if (e.target.id === 'del') screen.del();
-		else if (e.target.id === 'addPoint') screen.addPoint();
-		else if (e.target.id === 'equal') screen.getEqual();
+		if (e.target.classList[1] == 'operator') screen.calculateValue(e.target.id);
+		if (e.target.id === 'clear-all') screen.clearAll();
+		if (e.target.id === 'del') screen.del();
+		if (e.target.id === 'addPoint') screen.addPoint();
+		if (e.target.id === 'equal') screen.getEqual();
+		if (e.target.id === 'changeSign') screen.changeSign();
 	});
 });

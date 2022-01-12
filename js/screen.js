@@ -43,6 +43,7 @@ export default class Screen {
 		this.firstPrevValue.textContent = 0;
 		// this.secondPrevValue.textContent = '';
 		this.operator.textContent = '';
+		this.currentOperator = '';
 	}
 
 	del() {
@@ -79,5 +80,9 @@ export default class Screen {
 
 	getEqual() {
 		this.calculateValue(this.currentOperator);
+	}
+
+	changeSign() {
+		this.currentValue.textContent = parseFloat(this.currentValue.textContent) * -1;
 	}
 }
